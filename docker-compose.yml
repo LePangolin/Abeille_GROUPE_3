@@ -1,0 +1,30 @@
+services:
+  nodejs:
+    image: node:latest
+    volumes:
+      - ./app:/app
+    working_dir: /app
+    command: 
+      - bash
+      - -c
+      - "npm install && npm start"
+    ports:
+      - "3001:3000"
+    depends_on:
+      - db 
+    restart: always
+  db:
+    image: mysql:latest
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: abeille
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+    ports:
+      - "3306:3306"
+    restart: always
+
+
+  
