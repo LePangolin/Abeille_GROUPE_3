@@ -1,9 +1,10 @@
 const express = require('express');
+const path = "./public/"
 
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.sendFile(path + '/html/index.html', { root: '.' });
 });
 
 
