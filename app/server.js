@@ -9,6 +9,9 @@ app.get('/', (req, res) => {
 
 
 app.use('/html', express.static('public/html'));
+app.use('/css', express.static('public/css'));
+app.use('/js', express.static('public/js'));
+app.use('/assets', express.static('public/assets'));
 
 app.listen(3001, () => {
     console.log('Server is running on port 3001');
