@@ -1,30 +1,25 @@
 services:
-  nodejs:
+  server:
     image: node:latest
+    working_dir: /app
+    command: npm run dev
     volumes:
       - ./app:/app
-    working_dir: /app
-    command:
-    - bash
-    - -c
-    - "npm install && npm run dev"
     ports:
-      - "3001:3001"
+      - "3000:3000"
     depends_on:
-      - db 
-    restart: always
+      - db
   db:
-    image: mysql:latest
+    image: mongo:latest
     volumes:
-      - ./db:/var/lib/mysql
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: abeille
-      MYSQL_USER: admin
-      MYSQL_PASSWORD: admin
+      - ./data:/data/db
+      - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:r
     ports:
-      - "3306:3306"
-    restart: always
-
+      - "27018:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+      - MONGO_INITDB_DATABASE=abeille
+    
 
   

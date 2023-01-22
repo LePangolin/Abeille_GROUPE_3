@@ -1,5 +1,6 @@
 const express = require('express');
 const path = "./public/"
+const seed = require('./database/seeder');
 
 const app = express();
 
@@ -10,7 +11,7 @@ app.get('/', (req, res) => {
 
 app.use('/html', express.static('public/html'));
 
-app.listen(3001, () => {
-    console.log('Server is running on port 3001');
+app.listen(3010, () => {
+    console.log('Server is running on port 3010');
 });
 
