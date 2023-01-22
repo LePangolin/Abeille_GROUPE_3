@@ -23,11 +23,25 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     }
 
-    var map = L.map('map').setView([48.6602, 6.1536], 16);
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
+    var urljson = window.location.origin+"/assets/json/infomap.json";
 
+    fetch(urljson)
+        .then((response) => response.json())
+        .then((data) => {
+            var map = L.map('map').setView([data["map-lat"], data["map-lon"]], data["map-zoom"]);
+            L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: data["map-maxzoom"],
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+
+
+            data["flowers"].forEach(flower => {
+                if(flower["visible"]){
+                    var marker = L.marker([flower["lat"], flower["lon"]]).addTo(map);
+                    marker.bindPopup(flower["name"]);
+                }
+            });
+        }); 
+    
 
 });

@@ -1,0 +1,174 @@
+{
+    "map-lat": 48.6602,
+    "map-lon": 6.1536,
+    "map-zoom": 16,
+    "map-maxzoom": 19,
+    "flowers": [
+        {
+            "name": "Érable champêtre",
+            "img": "Acer campestre.jpg",
+            "visible": true,
+            "lat":48.66141586281145,
+            "lon":6.15575823884316
+        },
+        {
+            "name": "Érable sycomore",
+            "img": "Acer pseudoplatanus.jpg",
+            "visible": true,
+            "lat":48.66189651366642, 
+            "lon":6.155666907714712
+        },
+        {
+            "name": "Aulne glutineux",
+            "img": "Alnus glutinosa.jpg",
+            "visible": true,
+            "lat":48.660707354797864, 
+            "lon":6.154431417946013
+        },
+        {
+            "name": "Ancolie commune",
+            "img": "Aquilegia vulgaris.jpg",
+            "visible": false
+        },
+        {
+            "name": "Bruyère commune",
+            "img": "Calluna vulgaris.jpg",
+            "visible": false
+        },
+        {
+            "name": "Noisetier de Turquie",
+            "img": "corylus colurna.jpg",
+            "visible": false
+        },
+        {
+            "name": "Fleur de noisetier",
+            "img": "Corylus fleur .jpg",
+            "visible": false
+        },
+        {
+            "name": "Cotonéaster rampant",
+            "img": "cotoneaster_horizontalis.jpg",
+            "visible": false
+        },
+        {
+            "name": "Crocus printanier",
+            "img": "crocus vernus.jpg",
+            "visible": false
+        },
+        {
+            "name": "Dahlia commun",
+            "img": "Dalhia variabilis.jpg",
+            "visible": false
+        },
+        {
+            "name": "Épilobe en épi",
+            "img": "epilobium_angustifolium.JPG",
+            "visible": false
+        },
+        {
+            "name": "Sarrasin commun",
+            "img": "Fagopyrum esculentum.jpeg",
+            "visible": false
+        },
+        {
+            "name": "Févier d'Amérique",
+            "img": "gleditsia triacanthos.jpg",
+            "visible": false
+        },
+        {
+            "name": "Lierre",
+            "img": "Hedera-helix.jpg",
+            "visible": false
+        },
+        {
+            "name": "Lavande vraie",
+            "img": "lavande officinale.jpg",
+            "visible": false
+        },
+        {
+            "name": "Chèvrefeuille de Tartarie",
+            "img": "lonicera tartarica.jpg",
+            "visible": false
+        },
+        {
+            "name": "Luzerne cultivée",
+            "img": "Medicago sativa.jpg",
+            "visible": false
+        },
+        {
+            "name": "Phacélie à feuilles de tanaisie",
+            "img": "Phacelia tanacetifolia.jpg",
+            "visible": false
+        },
+        {
+            "name": "Cerisier sauvage",
+            "img": "Prunus avium.jpeg",
+            "visible": false
+        },
+        {
+            "name": "Prunellier",
+            "img": "Prunus spinosa.jpg",
+            "visible": false
+        },
+        {
+            "name": "Buisson ardent",
+            "img": "Pyracantha coccinea.jpg",
+            "visible": false
+        },
+        {
+            "name": "Robinier faux-acacia",
+            "img": "Robinia pseudoacacia.jpg",
+            "visible": false
+        },
+        {
+            "name": "Rudbéckie laciniée",
+            "img": "Rudbeckia laciniata.jpg",
+            "visible": false
+        },
+        {
+            "name": "Saule marsault",
+            "img": "salix caprea.jpg",
+            "visible": false
+        },
+        {
+            "name": "Solidage verge d'or",
+            "img": "Solidago virgaurea.jpg",
+            "visible": false
+        },
+        {
+            "name": "Sophora du Japon",
+            "img": "sophora japonica.jpg",
+            "visible": false
+        },
+        {
+            "name": "Pissenlit",
+            "img": "taraxacum officinale.jpg",
+            "visible": false
+        },
+        {
+            "name": "Thym commun",
+            "img": "thymus vulgaris.JPG",
+            "visible": false
+        },
+        {
+            "name": "Tilleul de Henry",
+            "img": "Tilia henryana.jpg",
+            "visible": false
+        },
+        {
+            "name": "Tilleul à grandes feuilles",
+            "img": "Tilia platyphyllos.jpg",
+            "visible": false
+        },
+        {
+            "name": "Trèfle blanc",
+            "img": "trifolium repens.jpg",
+            "visible": false
+        },
+        {
+            "name": "Petite Pervenche",
+            "img": "Vinca minor.jpg",
+            "visible": false
+        }
+    ]
+}
