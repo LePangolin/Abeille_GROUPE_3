@@ -1,0 +1,364 @@
+{
+  "tabPlante": [
+    {
+      "id": 1,
+      "Nom Latin": "Acer campestris",
+      "Nom Français": "érable champêtre",
+      "Hauteur": "15m",
+      "Nectar": 3,
+      "Pollen": 2,
+      "Miellat ": "M",
+      "Floraison Couleur": ",avril,mai,vert clair",
+      "Emplacements Jardin": "collection historique",
+      "lat": 48.66141586281145,
+      "lon": 6.15575823884316
+    },
+    {
+      "id": 2,
+      "Nom Latin": "Acer pseudoplatanus",
+      "Nom Français": "érable sycomore",
+      "Hauteur": "25m",
+      "Nectar": 2,
+      "Pollen": 2,
+      "Floraison Couleur": "mai,jaunâtre",
+      "Emplacements Jardin": "forêt",
+      "lat": 48.66189651366642,
+      "lon": 6.155666907714712
+    },
+    {
+      "id": 3,
+      "Nom Latin": "Alnus glutinosa",
+      "Nom Français": "aulne glutineux",
+      "Hauteur": "25m",
+      "Nectar": 1,
+      "Pollen": 2,
+      "Miellat ": "M",
+      "Floraison Couleur": "mars avril,jaune",
+      "Emplacements Jardin": "étang",
+      "lat": 48.660707354797864,
+      "lon": 6.154431417946013
+    },
+    {
+      "id": 4,
+      "Nom Latin": "Aquilegia vulgaris",
+      "Nom Français": "ancolie",
+      "Hauteur": "0.50m",
+      "Nectar": 2,
+      "Pollen": 3,
+      "Floraison Couleur": "mai,juin bleu",
+      "Emplacements Jardin": "collection historique"
+    },
+    {
+      "id": 5,
+      "Nom Latin": "Asclépias syriaca ",
+      "Nom Français": "herbe à la ouate",
+      "Hauteur": "1,50m",
+      "Nectar": 3,
+      "Pollen": 1,
+      "Floraison Couleur": "juin,juillet,août mauve",
+      "Emplacements Jardin": "collection ornementale"
+    },
+    {
+      "id": 6,
+      "Nom Latin": "Berberis vulgaris",
+      "Nom Français": "épine vinette",
+      "Hauteur": "2m",
+      "Nectar": 2,
+      "Pollen": 1,
+      "Floraison Couleur": ",juin,juillet,jaune",
+      "Emplacements Jardin": "secteur arboretum Chine"
+    },
+    {
+      "id": 7,
+      "Nom Latin": "Borago officinalis",
+      "Nom Français": "bourrache officinalis ",
+      "Hauteur": "0.5m",
+      "Nectar": 3,
+      "Pollen": 2,
+      "Floraison Couleur": "juin,juillet,août,bleu tendre ",
+      "Emplacements Jardin": "collection historique"
+    },
+    {
+      "id": 8,
+      "Nom Latin": "brassica arvensis ",
+      "Nom Français": "moutarde des champs",
+      "Hauteur": " 0.6 m                   3",
+      "Nectar": 3,
+      "Pollen": 1,
+      "Floraison Couleur": "juin,juillet,août jaune",
+      "Emplacements Jardin": "collection historique"
+    },
+    {
+      "id": 9,
+      "Nom Latin": "Calluna vulgaris",
+      "Nom Français": "bruyère commune callune",
+      "Hauteur": "0.15,0.30m",
+      "Nectar": 2,
+      "Pollen": 1,
+      "Floraison Couleur": "août,blanc,rose",
+      "Emplacements Jardin": "secteur terre de bruyère"
+    },
+    {
+      "id": 10,
+      "Nom Latin": "Corylus colurna",
+      "Nom Français": "noisetier de Bysance",
+      "Hauteur": "10,15m",
+      "Nectar": 0,
+      "Pollen": 1,
+      "Floraison Couleur": "fevrier,mars,jaune",
+      "Emplacements Jardin": "secteur arboretum Europe"
+    },
+    {
+      "id": 11,
+      "Nom Latin": "Cotoneaster horizontalis",
+      "Nom Français": "cotoneaster ",
+      "Hauteur": "2,3m",
+      "Nectar": 3,
+      "Pollen": 2,
+      "Floraison Couleur": "juin,juillet,rose",
+      "Emplacements Jardin": "arboretum,secteur chine"
+    },
+    {
+      "id": 12,
+      "Nom Latin": "Crocus vernus ",
+      "Nom Français": "crocus de printemps",
+      "Nectar": 1,
+      "Pollen": 2,
+      "Floraison Couleur": "fevrier,mars toutes couleurs",
+      "Emplacements Jardin": "pelouses"
+    },
+    {
+      "id": 13,
+      "Nom Latin": "Dalhia variabilis",
+      "Nom Français": "dalhia CV",
+      "Hauteur": "0;5,2m",
+      "Nectar": 0,
+      "Pollen": 2,
+      "Floraison Couleur": "juillet,août,septembre toutes couleurs",
+      "Emplacements Jardin": "collection de dahlias"
+    },
+    {
+      "id": 14,
+      "Nom Latin": "Epilobium angustifolium",
+      "Nom Français": "epilobe en épis",
+      "Hauteur": "2m",
+      "Nectar": 3,
+      "Pollen": 2,
+      "Floraison Couleur": "juillet,août rose",
+      "Emplacements Jardin": "ruisseau"
+    },
+    {
+      "id": 15,
+      "Nom Latin": "Fagopyrum esculentum",
+      "Nom Français": "sarrasin ou blé noir",
+      "Hauteur": "1m",
+      "Nectar": 2,
+      "Pollen": 1,
+      "Floraison Couleur": "juin,juillet,août blanc",
+      "Emplacements Jardin": "collection historique"
+    },
+    {
+      "id": 16,
+      "Nom Latin": "Fraxinus ornus",
+      "Nom Français": "frêne à fleurs",
+      "Hauteur": "10m",
+      "Nectar": 1,
+      "Pollen": 2,
+      "Floraison Couleur": "mai, juin blanche",
+      "Emplacements Jardin": "secteur arboretum Europe"
+    },
+    {
+      "id": 17,
+      "Nom Latin": "Gleditsia triacanthos",
+      "Nom Français": "févier",
+      "Hauteur": "20m",
+      "Nectar": 2,
+      "Pollen": 0,
+      "Floraison Couleur": "juin,juillet,jaune,vertearboretum secteur Amérique du nord"
+    },
+    {
+      "id": 18,
+      "Nom Latin": "Hedera helix",
+      "Nom Français": "lierre",
+      "Hauteur": "rampant",
+      "Nectar": 3,
+      "Pollen": 3,
+      "Floraison Couleur": "septembre, octobre",
+      "Emplacements Jardin": "vert tendre,forêt"
+    },
+    {
+      "id": 19,
+      "Nom Latin": "Lavandula officinale",
+      "Nectar": 3,
+      "Pollen": 1,
+      "Floraison Couleur": "juillet,août,bleu lilas",
+      "Emplacements Jardin": "potager"
+    },
+    {
+      "id": 20,
+      "Nom Latin": "Lonicera tartarica",
+      "Nom Français": "chèvrefeuille",
+      "Hauteur": "3m",
+      "Nectar": 2,
+      "Pollen": 2,
+      "Floraison Couleur": "mai,juin,blanc",
+      "Emplacements Jardin": "collection historique"
+    },
+    {
+      "id": 21,
+      "Nom Latin": "Médicago sativa",
+      "Nom Français": "luzerne cultivée",
+      "Hauteur": "0.50m",
+      "Nectar": 3,
+      "Pollen": 1,
+      "Floraison Couleur": "juin,juillet,août mauve",
+      "Emplacements Jardin": "collection historique"
+    },
+    {
+      "id": 22,
+      "Nom Latin": "Phacelia tanacetifolia ",
+      "Nom Français": "phacelie à feuilles de tanaisie",
+      "Hauteur": "0.50m",
+      "Pollen": "3      2",
+      "Floraison Couleur": "juillet,oût,septembre jardin écologique bleu clair",
+      "Emplacements Jardin": "potager écologique"
+    },
+    {
+      "id": 23,
+      "Nom Latin": "Prunus avium",
+      "Nom Français": "merisier",
+      "Hauteur": "10,15m",
+      "Nectar": 2,
+      "Pollen": 3,
+      "Miellat ": "M",
+      "Floraison Couleur": "avril,mai,blanche",
+      "Emplacements Jardin": "forêt"
+    },
+    {
+      "id": 24,
+      "Nom Latin": "Prunus spinosa",
+      "Nom Français": "prunellier",
+      "Hauteur": "3,4m",
+      "Nectar": 2,
+      "Pollen": 2,
+      "Floraison Couleur": "avril,mai,blanc",
+      "Emplacements Jardin": "roseraie"
+    },
+    {
+      "id": 25,
+      "Nom Latin": "Pyracantha coccinéa",
+      "Nom Français": "buisson ardent",
+      "Hauteur": "2,3m",
+      "Nectar": 2,
+      "Pollen": 3,
+      "Floraison Couleur": ",juin,juillet,blanc",
+      "Emplacements Jardin": "roseraie"
+    },
+    {
+      "id": 26,
+      "Nom Latin": "Robinia pseudoacacia",
+      "Nom Français": "robinier faux acacia ",
+      "Hauteur": "20m",
+      "Nectar": 3,
+      "Pollen": 2,
+      "Floraison Couleur": "juin,blanche ",
+      "Emplacements Jardin": "étang pavillon d'accueil"
+    },
+    {
+      "id": 27,
+      "Nom Latin": "Rudbeckia laciniata  ",
+      "Nom Français": "rudbeckia lacinié",
+      "Hauteur": "1,50m",
+      "Nectar": 0,
+      "Pollen": 3,
+      "Floraison Couleur": "juillet août jaune                            ",
+      "Emplacements Jardin": "collection historique ornementale"
+    },
+    {
+      "id": 28,
+      "Nom Latin": "Salix capréa",
+      "Nom Français": "saule marsault",
+      "Nectar": 2,
+      "Pollen": 3,
+      "Floraison Couleur": "mars avril,jaune,vert",
+      "Emplacements Jardin": "ruisseau"
+    },
+    {
+      "id": 29,
+      "Nom Latin": "Solidago virgaurea",
+      "Nom Français": " verge d'or",
+      "Hauteur": "1.50m ",
+      "Nectar": 2,
+      "Pollen": 2,
+      "Floraison Couleur": "août,septembre,octobre jaune",
+      "Emplacements Jardin": "collection historique"
+    },
+    {
+      "id": 30,
+      "Nom Latin": "Sophora japonica",
+      "Nom Français": "sophora du japon",
+      "Hauteur": "15 20m",
+      "Nectar": 3,
+      "Pollen": 1,
+      "Floraison Couleur": "août,septembre,blanc crème"
+    },
+    {
+      "id": 31,
+      "Nom Latin": "Taraxacum officinalis",
+      "Nom Français": "pissenlit",
+      "Nectar": 3,
+      "Pollen": 3,
+      "Floraison Couleur": "avril,mai,juin,juillet jaune",
+      "Emplacements Jardin": "pelouse prairie"
+    },
+    {
+      "id": 32,
+      "Nom Latin": "Thymus vulgaris",
+      "Nom Français": "thym",
+      "Hauteur": "0,20m",
+      "Nectar": 3,
+      "Pollen": 0,
+      "Floraison Couleur": "juin,juillet,août,mauve",
+      "Emplacements Jardin": " jardin écologique,potager"
+    },
+    {
+      "id": 33,
+      "Nom Latin": "Tilia henryana",
+      "Nom Français": "tilleul de Henry",
+      "Hauteur": "12m",
+      "Nectar": 3,
+      "Pollen": 2,
+      "Floraison Couleur": ",septembre,jaunâtre",
+      "Emplacements Jardin": "étang pavillon d'accueil"
+    },
+    {
+      "id": 34,
+      "Nom Latin": "Tilia platyphillos",
+      "Nom Français": "tilleul à larges feuilles",
+      "Hauteur": "20m",
+      "Nectar": 3,
+      "Pollen": 2,
+      "Floraison Couleur": "juin,janâtre",
+      "Emplacements Jardin": "parcelle Emile Gallé"
+    },
+    {
+      "id": 35,
+      "Nom Latin": "Trifolium repens",
+      "Nom Français": " trèfle blanc",
+      "Nectar": 3,
+      "Pollen": 2,
+      "Floraison Couleur": "mai,juin,juillet,août,septembre",
+      "Emplacements Jardin": "pelouse"
+    },
+    {
+      "id": 36,
+      "Nom Latin": "Vinca minor",
+      "Nom Français": "petite pervenche",
+      "Hauteur": "0,30m",
+      "Nectar": 2,
+      "Pollen": 0,
+      "Floraison Couleur": "mars, avril bleu",
+      "Emplacements Jardin": "arboretum"
+    }
+  ]
+}

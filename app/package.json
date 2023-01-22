@@ -4,7 +4,8 @@
         "express": "^4.17.1",
         "node-fetch": "^2.6.0",
         "nodemon": "^2.0.4",
-        "mongodb": "^4.13.0"
+        "mongodb": "^4.13.0",
+        "express-session": "^1.17.1"
     },
     "scripts": {
         "start": "node server.js",
