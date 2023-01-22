@@ -2,7 +2,7 @@ services:
   server:
     image: node:latest
     working_dir: /app
-    command: npm run dev
+    command: bash -c "cd ./database && node initdb.js && cd .. && npm install && npm run dev" 
     volumes:
       - ./app:/app
     ports:
@@ -12,8 +12,8 @@ services:
   db:
     image: mongo:latest
     volumes:
-      - ./data:/data/db
       - ./init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:r
+      - ./data:/data/db
     ports:
       - "27018:27017"
     environment:
