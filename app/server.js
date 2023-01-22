@@ -4,6 +4,7 @@ const session = require('express-session');
 
 
 const userRoute = require('./routes/userRoute');
+const markerRoute = require('./routes/markerRoute');
 
 
 
@@ -36,6 +37,7 @@ app.use('/assets', express.static('public/assets'));
 
 
 app.use('/api', userRoute);
+app.use('/api', markerRoute);
 
 app.listen(3010, () => {
     console.log('Server is running on port 3010');
