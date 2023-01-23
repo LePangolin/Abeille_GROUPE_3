@@ -22,7 +22,7 @@ function marker(id, fn){
     MongoClient.connect(url, (err, db) => {
         if (err) throw err;
         const dbo = db.db('abeille');
-        dbo.collection('plantes').findOne({id : id},(err, res) => {
+        dbo.collection('plantes').findOne({idPlante : parseInt(id)},(err, res) => {
             if (err) throw err;
             if(!res){
                 fn(null);
