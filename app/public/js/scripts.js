@@ -66,6 +66,38 @@ window.addEventListener('DOMContentLoaded', event => {
         const qrCode = jsQR(imageData.data, imageData.width, imageData.height);
         if (qrCode) {
         document.querySelector('#result').textContent = qrCode.data;
+            let res = document.querySelector('#result').textContent;
+            let tab = res.split("/");
+            tab.splice(0, 1);
+            res = tab.join("/");
+            console.log(res);
+            if (res.value !== "" || res !== null || res !== undefined) {
+                try {
+                    fetch(res)
+                        .then((response) => response.json())
+                        .then((data) => {
+                            console.log(data)
+                            let nomfr = data["Nom Français"];
+                            let nomlat = data["Nom Latin"];
+                            let floraisonColor = data["Floraison Couleur"];
+                            let nectar = data["Nectar"];
+
+                            document.querySelector('#nomfr').textContent = nomfr;
+                            document.querySelector('#nomlat').textContent = nomlat;
+                            document.querySelector('#floraisonColor').textContent = floraisonColor;
+                            document.querySelector('#nectar').textContent = nectar;
+                            let score = document.querySelector('#score').value;
+                            score = parseInt(score);
+                            score = score + parseInt(nectar);
+                            document.querySelector('#score').textContent = score;
+
+                            let url = "/assets/img/"+nomlat+".jpg";
+                            document.querySelector('#plantimg').src = url;
+                        });
+                } catch (error) {
+                    console.log(error)
+                }
+            }
     }
     }, 200);
     };
@@ -73,4 +105,7 @@ window.addEventListener('DOMContentLoaded', event => {
         .catch(err => {
         console.error(err);
     });
+
+
+
 });
