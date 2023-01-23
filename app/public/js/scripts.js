@@ -41,7 +41,36 @@ window.addEventListener('DOMContentLoaded', event => {
                     marker.bindPopup(flower["name"]);
                 }
             });
-        }); 
-    
+        });
 
+        // Obtenir un flux vidéo à partir de la webcam
+        navigator.mediaDevices.getUserMedia({ video: true })
+        .then(stream => {
+        // Afficher le flux vidéo dans la balise vidéo
+        document.querySelector('#webcam').srcObject = stream;
+        // Attendre que la vidéo soit prête
+        document.querySelector('#webcam').onloadedmetadata = () => {
+        // Lire les codes QR à partir du flux vidéo
+        setInterval(() => {
+        const video = document.getElementById("webcam");
+        const canvas = document.createElement("canvas");
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        canvas.getContext("2d").drawImage(video, 0, 0);
+        const imageData = canvas.getContext("2d").getImageData(
+        0,
+        0,
+        canvas.width,
+        canvas.height
+        );
+        const qrCode = jsQR(imageData.data, imageData.width, imageData.height);
+        if (qrCode) {
+        document.querySelector('#result').textContent = qrCode.data;
+    }
+    }, 200);
+    };
+    })
+        .catch(err => {
+        console.error(err);
+    });
 });

@@ -17,6 +17,7 @@
         <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
                 integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
                 crossorigin=""></script>
+        <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
     </head>
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
@@ -66,6 +67,10 @@
                                 Pages
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                             </a>
+                            <div class="sb-sidenav-menu-heading">Liens</div>
+                            <a class="nav-link" href="https://www.jardinbotaniquedenancy.eu/jardin-botanique-jean-marie-pelt" target="_blank">
+                                Site du Jardin Botanique
+                            </a>
                             <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
                                     <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
@@ -98,7 +103,24 @@
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                    <div id="mainScanQR">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-qrcode"></i> Scan QR Code</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="qr-reader">
+                                        <video id="webcam" autoplay></video>
+                                        <p id="result"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mainScanQR" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <div id="ScanQR1" class="scan"></div>
                         <div id="ScanQR2" class="scan"><img src="/assets/img/QR_icon.png" ></div>
                         <div id="ScanQR3" class="scan"></div>
