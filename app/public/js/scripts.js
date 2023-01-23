@@ -1,11 +1,12 @@
-/*!
-    * Start Bootstrap - SB Admin v7.0.5 (https://startbootstrap.com/template/sb-admin)
-    * Copyright 2013-2022 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-sb-admin/blob/master/LICENSE)
-    */
-    // 
-// Scripts
-// 
+function sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+        currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+}
+
+let scan = true
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -22,6 +23,18 @@ window.addEventListener('DOMContentLoaded', event => {
             localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
         });
     }
+
+    let close = document.getElementsByClassName("buttonClose")
+    Array.from(close).forEach(function(element) {
+        element.addEventListener('click', function() {
+            document.querySelector('#nomfr').textContent = "";
+            document.querySelector('#nomlat').textContent = "";
+            document.querySelector('#floraisonColor').textContent = "";
+            document.querySelector('#nectar').textContent = "";
+            document.querySelector('#plantimg').src = "";
+            scan = true
+        })
+    })
 
     var urljson = window.location.origin+"/assets/json/infomap.json";
 
@@ -73,30 +86,35 @@ window.addEventListener('DOMContentLoaded', event => {
             console.log(res);
             if (res.value !== "" || res !== null || res !== undefined) {
                 try {
-                    fetch(res)
-                        .then((response) => response.json())
-                        .then((data) => {
-                            console.log(data)
-                            let nomfr = data["Nom Français"];
-                            let nomlat = data["Nom Latin"];
-                            let floraisonColor = data["Floraison Couleur"];
-                            let nectar = data["Nectar"];
+                    if (scan === true) {
+                        fetch(res)
+                            .then((response) => response.json())
+                            .then((data) => {
+                                console.log(data)
+                                let nomfr = data["Nom Français"];
+                                let nomlat = data["Nom Latin"];
+                                let floraisonColor = data["Floraison Couleur"];
+                                let nectar = data["Nectar"];
 
-                            document.querySelector('#nomfr').textContent = nomfr;
-                            document.querySelector('#nomlat').textContent = nomlat;
-                            document.querySelector('#floraisonColor').textContent = floraisonColor;
-                            document.querySelector('#nectar').textContent = nectar;
-                            let score = document.querySelector('#score').value;
-                            score = parseInt(score);
-                            score = score + parseInt(nectar);
-                            document.querySelector('#score').textContent = score;
+                                document.querySelector('#nomfr').textContent = "Nom: "+nomfr;
+                                document.querySelector('#nomlat').textContent = "Nom latin: "+nomlat;
+                                document.querySelector('#floraisonColor').textContent = "floraison et couleur: "+floraisonColor;
+                                document.querySelector('#nectar').textContent = "Nectars gagnés: "+nectar;
 
-                            let url = "/assets/img/"+nomlat+".jpg";
-                            document.querySelector('#plantimg').src = url;
-                        });
+                                let score = document.querySelector('#score').textContent;
+                                score = parseInt(score);
+                                score = score + parseInt(nectar);
+                                document.querySelector('#score').textContent = score;
+
+                                let url = "/assets/img/" + nomlat + ".jpg";
+                                document.querySelector('#plantimg').src = url;
+                                scan = false;
+                            })
+                    }
                 } catch (error) {
                     console.log(error)
                 }
+
             }
     }
     }, 200);
